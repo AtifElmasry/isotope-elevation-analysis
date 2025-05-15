@@ -1,45 +1,80 @@
+
 # 🧪 Isotope-Elevation Analysis
 
-This project analyzes the relationship between oxygen isotope values (δ¹⁸O), elevation, and slope. It applies linear modeling and residual analysis to understand how δ¹⁸O changes with elevation and terrain slope.
+This project analyzes the relationship between oxygen isotope values (δ¹⁸O), elevation, and slope using linear regression modeling and residual diagnostics.
 
 ---
 
-## 📂 Contents
+## 📁 Project Structure
 
-- `data/isotope_data_with_slope.csv`  
-- `scripts/isotope_analysis.R`
-- `plots/plot1.png`, `plot2.png`, `plot3.png`
-
----
-
-## 📊 Analysis Highlights
-
-- Linear model: `mean_delta_O18 ~ Elevation`
-- Residuals calculated and plotted
-- Correlation tests for:
-  - Elevation vs δ¹⁸O
-  - Residuals vs Elevation
-  - Residuals vs Slope
-  - Elevation vs Predicted δ¹⁸O
+```
+isotope-elevation-analysis/
+├── data/
+│   └── isotope_data_with_slope.csv
+├── scripts/
+│   └── isotope_analysis.R
+├── plots/
+│   ├── plot1_mean_delta_O18_vs_Elevation.png
+│   ├── plot2_residuals_vs_elevation.png
+│   ├── plot3_residuals_vs_slope.png
+│   └── plot_combined_grid.png
+└── README.md
+```
 
 ---
 
-## 🧪 Visualizations
+## 📊 Key Analyses
+
+- **Linear Regression**: δ¹⁸O as a function of elevation
+- **Residual Analysis**: Diagnostic plots for model fit
+- **Correlation Tests**:
+  - δ¹⁸O vs Elevation
+  - Residuals vs Elevation and Slope
+  - Predicted δ¹⁸O vs Elevation and Slope
+
+---
+
+## 🖼️ Visualizations
 
 ### δ¹⁸O vs Elevation  
-![plot1](plots/plot1.png)
+![Plot 1](plots/plot1_mean_delta_O18_vs_Elevation.png)
 
 ### Residuals vs Elevation  
-![plot2](plots/plot2.png)
+![Plot 2](plots/plot2_residuals_vs_elevation.png)
 
 ### Residuals vs Slope  
-![plot3](plots/plot3.png)
+![Plot 3](plots/plot3_residuals_vs_slope.png)
+
+### Combined Grid of All Plots  
+![Combined Plot](plots/plot_combined_grid.png)
 
 ---
 
 ## 🧠 How to Reproduce
 
-1. Install R and required packages:
+1. Clone the repository.
+2. Ensure R is installed.
+3. Install required libraries:
 
 ```r
 install.packages(c("ggplot2", "dplyr", "gridExtra"))
+```
+
+4. Run the script:
+
+```r
+source("scripts/isotope_analysis.R")
+```
+
+---
+
+## 👨‍💻 Author
+
+**Atifa Elmasry**  
+Environmental Data Analyst | R Programming | Geospatial Analysis
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
