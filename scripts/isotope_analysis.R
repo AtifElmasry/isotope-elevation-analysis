@@ -90,3 +90,5 @@ ggsave("C:/Users/atifa/OneDrive/Documents/GitHub/isotope-elevation-analysis/plot
 # Final correlations
 print(cor.test(isotope_data$Elevation, isotope_data$Predicted_isotopes))
 print(cor.test(isotope_data$slope, isotope_data$Predicted_isotopes))
+
+print(plot1)
